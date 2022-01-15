@@ -1,0 +1,10 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<div class="wrapper">
+  <img src="{{ info.image }}" />
+  <h1 class="animated-title">{{ info.name }}</h1>
+  <p>{{ info.position }}</p>
+
+  {% include "partials/social-links.html" %}
+</div>
+{% endblock %}
